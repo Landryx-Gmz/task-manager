@@ -11,7 +11,7 @@ class Task:
 
 class TaskManager:
 
-    def __ini__(self):
+    def __init__(self):
         self._tasks = []
         self._next_id = 1
 
