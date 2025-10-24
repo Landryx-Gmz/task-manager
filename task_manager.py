@@ -38,8 +38,8 @@ class TaskManager:
     def complete_task(self, id):
         for task in self._tasks:
             if task.id == id:
-                task.completed = True
                 print(f"Tarea completada: {task}")
+                task.completed = True
                 self.save_tasks()
                 return
         print(f"Tarea no encontrada : #{id}")
